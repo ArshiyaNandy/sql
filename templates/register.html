@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="register-container">
+    <h2>Register</h2>
+    <form method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Register">
+    </form>
+    {% if message %}
+        <p class="message">{{ message }}</p>
+    {% endif %}
+</div>
+{% endblock %}

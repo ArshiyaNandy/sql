@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="sql-test-container">
+    <h2>SQL Test Interface (Use With Caution)</h2>
+    <form method="post">
+        <label for="query">Raw SQL Query:</label><br>
+        <textarea name="query" rows="6" placeholder="Enter your SQL query here..." required></textarea><br><br>
+        <input type="submit" value="Execute">
+    </form>
+    {% if output %}
+        <div class="output-container">
+            <h3>Query Result:</h3>
+            <pre>{{ output }}</pre>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

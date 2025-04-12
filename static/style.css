@@ -1,0 +1,301 @@
+/* Basic page setup */
+body {
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.message {
+    font-weight: bold;
+    color: #dc3545;
+    text-align: center;
+}
+.success {
+    color: #28a745;
+}
+
+/* Styling the login container */
+.login-container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the register container */
+.register-container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the SQL Test container */
+.sql-test-container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.sql-test-container h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+textarea[name="query"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.output-container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Navbar adjustment */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    /* Adjust input fields */
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"],
+    textarea {
+        font-size: 1.2em;
+    }
+
+    .login-container, .register-container, .sql-test-container {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .login-container h2,
+    .register-container h2,
+    .sql-test-container h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .message {
+        font-size: 1.1em;
+    }
+
+    .output-container {
+        padding: 10px;
+    }
+}
